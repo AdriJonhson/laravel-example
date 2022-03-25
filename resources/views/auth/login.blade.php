@@ -37,7 +37,7 @@
 
                         </div>
                         <div class="">
-                            <a href="senha.html">Esqueceu sua senha?</a>
+                            <a href="{{url('forgot-password')}}">Esqueceu sua senha?</a>
                         </div>
                         <div class="form-group text-center">
                             <button type="submit" class="btn btn-outline-light btn-lg"

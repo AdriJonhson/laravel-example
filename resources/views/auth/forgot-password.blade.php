@@ -1,36 +1,53 @@
-<x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
-        </x-slot>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-        <div class="mb-4 text-sm text-gray-600">
-            {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+<head>
+    @include("head")
+
+    <title>IFGAccess - Esqueceu sua senha?</title>
+</head>
+
+<body id="id-pg-senha">
+
+@include("header")
+
+<div id="id-senha" class="container access-capa">
+    <div class="row">
+        <div class="col-md-4 col-sm-8 col-xs-10 col-md-offset-4 col-sm-offset-2 col-xs-offset-1 access-caixa">
+            <h3 class="text-center">Recuperação</h3>
+            <div class="col-md-10 col-md-offset-1" id="form-login">
+                <!-- Session Status -->
+                <x-auth-session-status class="mb-4" :status="session('status')" />
+
+                <!-- Validation Errors -->
+                <x-auth-validation-errors class="mb-4" :errors="$errors" />
+
+                <form method="POST" action="{{ route('password.email') }}">
+                    @csrf
+
+                    <div class="form-group">
+
+                        <input type="text" name="email" class="form-control" id="inputUsuario" placeholder="Email">
+
+                    </div>
+
+                    <div class="">
+                        <a href="{{url('login')}}">Voltar para Login</a>
+                    </div>
+
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-outline-light btn-lg"
+                           id="id-btn-login">Confirmar</button>
+                    </div>
+
+                </form>
+            </div>
         </div>
+    </div>
+    <div class="col-md-12 text-center" id="id-direitos">
+        <p> © 2019 IFGAccess | Desenvolvimento: IFG </p>
+    </div>
+</div>
 
-        <!-- Session Status -->
-        <x-auth-session-status class="mb-4" :status="session('status')" />
-
-        <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
-
-        <form method="POST" action="{{ route('password.email') }}">
-            @csrf
-
-            <!-- Email Address -->
-            <div>
-                <x-label for="email" :value="__('Email')" />
-
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <x-button>
-                    {{ __('Email Password Reset Link') }}
-                </x-button>
-            </div>
-        </form>
-    </x-auth-card>
-</x-guest-layout>
+</body>
+</html>
