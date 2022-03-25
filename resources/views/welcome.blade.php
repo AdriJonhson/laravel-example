@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>IFGAccess - Home</title>
+    <title>IFGAccess - Dashboard</title>
 
     @include("head")
 </head>
@@ -24,13 +24,13 @@
                 </p>
 
                 <div id="btn-1" class="col-md-6">
-                    <a href="acessos.php" class="btn btn-outline-light btn-lg text-center">
+                    <a href="/acessos" class="btn btn-outline-light btn-lg text-center">
                         Ver Lista de Acessos
                     </a>
                 </div>
 
                 <div id="btn-2" class="col-md-6">
-                    <a href="login.php" class="btn btn-outline-light btn-lg text-center">
+                    <a href="/login" class="btn btn-outline-light btn-lg text-center">
                         Login de Administrador
                     </a>
                 </div>

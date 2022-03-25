@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a href="index.php" class="navbar-brand">
+            <a href="/" class="navbar-brand">
                 <span id="id-logo" class="access-logo"> IFGAccess </span>
             </a>
         </div>
@@ -17,13 +17,13 @@
         <div class="collapse navbar-collapse" id="barra-navegacao">
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a href="acessos.php">
+                    <a href="/acessos">
                         Acessos
                     </a>
                 </li>
 
                 <li class="dropdown">
-                    <a href="login.php">
+                    <a href="/login">
                         Login <span class="glyphicon glyphicon-log-in"> </span>
                     </a>
                 </li>
