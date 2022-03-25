@@ -1,0 +1,423 @@
+html, body {
+    overflow-x: hidden;
+    font-family: "Segoe UI";
+}
+
+.access-capa {
+    overflow: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgba(13, 13, 13, 0.6) 0%,
+    rgba(64, 255, 96, 0.6) 100%), url(/imagens/background.jpg);
+    color: white;
+    width: 100%;
+    min-height: calc(100vh);
+}
+
+
+input:focus {
+    border-color: rgba(30, 111, 47, 0.5) !important;
+}
+
+.access-caixa {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px #000;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th  {
+    border-top: transparent;
+    border-bottom: 1px solid #dadada;
+}
+
+.table-responsive {
+    border: transparent !important;
+}
+
+.table-hover > tbody > tr > td.active:hover,
+.table-hover > tbody > tr > th.active:hover,
+.table-hover > tbody > tr.active:hover > td,
+.table-hover > tbody > tr:hover > .active,
+.table-hover > tbody > tr.active:hover > th {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.input-group-addon {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #dadada;
+}
+
+
+.access-btn-usuario {
+    background-color: transparent;
+    color: white;
+}
+
+.access-btn-usuario :hover,
+.access-btn-usuario :active,
+.access-btn-usuario :link{
+    color: #dadada;
+}
+
+
+
+
+/* ----------- Modal ----------- */
+
+.modal-content {
+    background-color: #fafafa;
+    border-radius: 10px;
+}
+
+
+/* ----------- Navbar ----------- */
+
+.access-logo {
+    height: 40px;
+    width: 132px;
+    display: block;
+    background: url('/imagens/ifg2015completa.png') no-repeat;
+    background-size: contain;
+    color: transparent !important;
+}
+
+.access-logo-2 {
+    height: 40px;
+    width: 132px;
+    display: block;
+    background: url('/imagens/logo.png') no-repeat;
+    background-size: contain;
+    color: transparent !important;
+}
+
+nav.access-navbar {
+    padding-top: 5px;
+    background: rgba(255, 255, 255, 0.0);
+    border: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.navbar-collapse a {
+    margin-top: 15px;
+    color: white;
+}
+
+.navbar-collapse a:hover{
+    color: #dadada;
+    background: transparent !important;
+}
+
+.navbar-collapse a:active {
+    color: white;
+    background-color: transparent !important;
+}
+
+.navbar-collapse a:focus {
+    background-color: transparent !important;
+}
+
+.navbar-collapse a:active {
+    background-color: transparent !important;
+}
+
+.navbar-toggle {
+    border-color: white !important;
+}
+
+.access-navbar-2 {
+    background: rgba(0, 0, 0, 0.5) !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ----------- Index ----------- */
+
+.btn-outline-light {
+    border-radius: 50px;
+    color: #f8f9fa;
+    background-color: transparent;
+    border-color: #f8f9fa;
+    margin-top: 2.5em;
+}
+
+.btn-outline-light:hover {
+    color: #f8f9fa;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: transparent;
+}
+
+.navbar-toggle {
+    border: 1px solid #303030;
+    border-radius: 4px;
+    margin-top: 18px;
+}
+
+.icon-bar {
+    background-color: white;
+}
+
+hr {
+    width: 7em;
+    border-color: white;
+}
+
+.access-apresentacao {
+    margin-top: 9.8em;
+    height: 36.2em;
+}
+
+
+.dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li>a {
+    color: white;
+}
+
+.dropdown-menu li>a:hover {
+    color: #dadada;
+    text-decoration: none;
+}
+
+/* ----------- Login / Senha / Recuperação ----------- */
+
+#id-login, #id-senha, #id-recuperacao {
+    height: 45.9em;
+}
+
+#id-pg-login .access-caixa, #id-pg-senha .access-caixa, #id-pg-recuperacao .access-caixa{
+    margin-top: 12.5em;
+}
+
+.access-titulo {
+    margin-top: 2.4em;
+}
+
+#id-pg-acessos .access-caixa{
+    margin-top: 1em;
+    margin-bottom: 4em;
+}
+
+.access-caixa a, .access-caixa h3 {
+    color: #f4f4f4;
+}
+
+.access-caixa h3 {
+    margin-bottom: 0.6em;
+}
+
+.access-caixa .btn-outline-light {
+    width: 8em;
+    margin-top: 1em;
+}
+
+.access-caixa .btn-outline-light:hover {
+    color: #f4f4f4;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+#id-pg-administrador .access-caixa .btn-outline-light {
+    width: 10em;
+}
+
+
+
+
+
+#id-pg-cadastro .btn-outline-light{
+    margin-top: 0px;
+    margin-bottom: 2em;
+}
+
+
+/* ----------- Footer ----------- */
+
+footer {
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    background: #000000;
+}
+
+footer #id-informacoes-footer {
+    padding: 1.5em 0em 0.5em 0em;
+}
+
+footer a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #dadada;
+}
+
+footer a:focus {
+    text-decoration: none;
+}
+
+footer p {
+    color: #dadada;
+}
+
+.access-social {
+    width: 42px;
+}
+
+footer .access-logo {
+    height: 50px;
+    width: 142px;
+    display: block;
+    background: url('/imagens/ifg2015completa.png') no-repeat;
+    background-size: contain;
+    color: transparent !important;
+}
+
+footer #id-direitos {
+    text-align: right;
+}
+
+#id-direitos {
+    margin-top: 1.2em;
+}
+
+/* ----------- Tipografia ----------- */
+
+h1, h2, h3, h4, p, a {
+    font-family: "Segoe UI";
+}
+
+/* ----------- Media Query ----------- */
+
+/* xs */
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+
+    h3 {
+        font-size: 29px;
+    }
+
+    p, li p{
+        font-size: 13px !important;
+    }
+
+    a, footer p {
+        font-size: 12px !important;
+    }
+
+    nav.access-navbar {
+        background: rgba(0, 0, 0, 0.9) !important;
+    }
+
+    footer>.container>.row {
+        text-align: center;
+    }
+
+    #btn-1, #btn-2 {
+        text-align: center;
+    }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 43px;
+    }
+
+    h3 {
+        font-size: 34px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+    a, footer p {
+        font-size: 13px !important;
+    }
+
+    #btn-1, #btn-2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    footer>.container>.row, footer #id-direitos {
+        text-align: center;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    a, footer p {
+        font-size: 14px !important;
+    }
+
+    #btn-1 {
+        text-align: right;
+    }
+
+    #btn-2 {
+        text-align: left;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    a, footer p {
+        font-size: 14px !important;
+    }
+}
+
